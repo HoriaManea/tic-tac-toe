@@ -1,9 +1,9 @@
-export default function Square({value}) {
+// import { useState } from "react";
 
-    function handleClick() {
-        console.log('clicked', value)
-    }
-
-    return<button className="square"
-    onClick={handleClick}>{value}</button>
+export default function Square({ value, onSquareClick }) {
+  return (
+    <button onClick={onSquareClick} className="square">
+      {value}
+    </button>
+  );
 }
